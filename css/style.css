@@ -458,3 +458,36 @@ a {
     border-radius: .05em;
     color: #ddd;
 }
+/* Remove the Emby Logo and text from Login Screen */
+
+.logoLibraryMenuButtonText {
+	display: none;
+}
+img[src*="css/images/mblogoicon.png"] {
+	display: none;
+}
+
+/* END */
+
+
+
+/* Add our own logo and modify sizes */
+
+#loginPage {
+    padding-top: 30px;
+}
+#loginPage:before {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 15px;
+    content: " ";
+    background: url("/web/css/images/nxttmembylogo.png"); 
+    background-size: 100% 100%;
+    width: 333px;
+    height: 76px;
+}
+
+/* END */
